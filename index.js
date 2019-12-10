@@ -1,7 +1,13 @@
 "use strict"
 
-module.exports = (input, { postfix = "rainbows" } = {}) => {
-    if (typeof input !== "string") throw new TypeError(`Expected a string, got ${typeof input}`)
+const hashCode = require("@pelevesque/hash-code")
+const JavaRandom = require("java-random")
+const is = require("@sindresorhus/is")
 
-    return `${input} & ${postfix}`
+// Based on https://minecraft.gamepedia.com/Seed_(level_generation)#Technical
+
+module.exports = (seed) => {
+    if (is.string(seed)) return BigInt(hashCode(seed))
+    if (is.number(seed) && seed !== 0) return BigInt(seed)
+    else return new JavaRandom().nextLong()
 }
