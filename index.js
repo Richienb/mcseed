@@ -8,7 +8,7 @@ const integerLimit = require("integer-limit")
 // Based on https://minecraft.gamepedia.com/Seed_(level_generation)#Technical
 
 module.exports = (seed) => {
-    seed = seed.toString()
+    if (!is.undefined(seed)) seed = seed.toString()
 
     if (!is.nan(Number(seed)) && seed !== 0) {
         if (BigInt(seed) < integerLimit(64, { bitint: true })) return BigInt(seed)
