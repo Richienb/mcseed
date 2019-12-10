@@ -1,13 +1,8 @@
 import test from "ava"
-import theModule from "."
+import mcseed from "."
 
 test("main", (t) => {
-    t.throws(() => {
-        theModule(123)
-    }, {
-        instanceOf: TypeError,
-        message: "Expected a string, got number",
-    })
+    t.is(mcseed(12345), 12345n)
 
-    t.is(theModule("unicorns"), "unicorns & rainbows")
+    t.is(mcseed("abc"), 96354n)
 })

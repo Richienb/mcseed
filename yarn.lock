@@ -496,6 +496,11 @@ anymatch@~3.1.1:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
+arch@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/arch/-/arch-2.1.1.tgz#8f5c2731aa35a30929221bb0640eed65175ec84e"
+  integrity sha512-BLM56aPo9vLLFVa8+/+pJLnrZ7QGGTVHWsCwieAWT9o9K8UeGaQbzZbGoabWLOo2ksBCztoXdqBZBplqLDDCSg==
+
 argparse@^1.0.7:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/argparse/-/argparse-1.0.10.tgz#bcd6791ea5ae09725e17e5ad988134cd40b3d911"
@@ -2292,6 +2297,13 @@ inquirer@^7.0.0:
     string-width "^4.1.0"
     strip-ansi "^5.1.0"
     through "^2.3.6"
+
+integer-limit@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/integer-limit/-/integer-limit-1.0.0.tgz#bb4c71ce573852ce93a760149dabc70e0a0a6c2a"
+  integrity sha512-31ZYKv+aW0ZX/nEQ9MtdQ3GmQwLnIXAR/mJ8Xkc7wEaQb4btmSeQ3ADoFdjbemzTDLEB3A2TIhZPfdL8WkEi3A==
+  dependencies:
+    arch "^2.1.1"
 
 irregular-plurals@^2.0.0:
   version "2.0.0"

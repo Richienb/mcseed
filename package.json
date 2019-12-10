@@ -1,8 +1,8 @@
 {
-    "name": "the-module",
+    "name": "mcseed",
     "version": "0.0.0",
-    "description": "My awesome module.",
-    "repository": "https://github.com/Richienb/the-module.git",
+    "description": "Emulate Minecraft's seed selection system.",
+    "repository": "https://github.com/Richienb/mcseed.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
     "license": "MIT",
     "main": "index.js",
@@ -11,16 +11,25 @@
         "index.d.ts"
     ],
     "engines": {
-        "node": ">=8"
+        "node": ">=10.4"
     },
     "scripts": {
         "lint": "xo",
         "test": "yarn lint && ava"
     },
-    "keywords": [],
+    "keywords": [
+        "minecraft",
+        "seed",
+        "world",
+        "generation",
+        "random",
+        "hash",
+        "java"
+    ],
     "dependencies": {
         "@pelevesque/hash-code": "^0.0.5",
         "@sindresorhus/is": "^1.2.0",
+        "integer-limit": "^1.0.0",
         "java-random": "^0.4.0"
     },
     "devDependencies": {

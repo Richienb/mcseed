@@ -1,41 +1,40 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/mcseed/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/mcseed)
 
-My awesome module.
+Emulate Minecraft's seed selection system.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/mcseed.png)](https://npmjs.com/package/mcseed)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install mcseed
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const mcseed = require("mcseed");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+mcseed(); // Random seed (blank seed box)
+//=> -47201340728604373n
+
+mcseed(12345); // Numerical seed
+//=> 12345n
+
+mcseed("abc"); // Text seed
+//=> 96354n
 ```
+
+## Why BigInt?
+
+For random seeds, the generated number could be higher than what javascript supports with the native Number object. Therefore, BigInt is essential to store the full seed.
 
 ## API
 
-### theModule(input, options?)
+### mcseed(seed?)
 
-#### input
+#### seed
 
-Type: `string`
+Type: `string | number`
 
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The seed to input in the "seed box".
