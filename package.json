@@ -1,6 +1,6 @@
 {
     "name": "mcseed",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "Emulate Minecraft's seed selection system.",
     "repository": "https://github.com/Richienb/mcseed.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
