@@ -1,4 +1,4 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/mcseed/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/mcseed)
+# MC Seed [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/mcseed/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/mcseed)
 
 Emulate Minecraft's seed selection system.
 
