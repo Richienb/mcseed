@@ -28,7 +28,7 @@
     ],
     "dependencies": {
         "@pelevesque/hash-code": "^0.0.5",
-        "@sindresorhus/is": "^1.2.0",
+        "@sindresorhus/is": "^2.0.0",
         "integer-limit": "^1.0.0",
         "java-random": "^0.4.0"
     },
