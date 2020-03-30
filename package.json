@@ -33,7 +33,7 @@
         "java-random": "^0.4.0"
     },
     "devDependencies": {
-        "ava": "^2.1.0",
+        "ava": "^3.5.2",
         "eslint-config-richienb": "^0.2.3",
         "xo": "^0.25.3"
     },
